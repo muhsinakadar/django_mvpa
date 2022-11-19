@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getc-Staff Registration</title>
+</head>
+<body>
+    <form action="" method="post">
+
+        {% csrf_token %}
+
+        <table border="1" align="center" cellpadding="10" style="border-collapse:collapse;">
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="txtFirstName" id="" value="{{ Data.FirstName }}"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="txtLastName" id=""  value="{{ Data.LastName }}"></td>
+            </tr>
+            <tr>
+                <td>Position</td>
+                <td><input type="text" name="txtPosition" id=""  value="{{ Data.Position }}"></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="text" name="txtAge" id=""  value="{{ Data.Age }}"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="btnSave" value="Update Data">
+                    
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        
+        
+        </table>
+
+
+        
+
+    </form>
+    
+</body>
+</html>
